@@ -1,3 +1,7 @@
+# Ứng dụng nhắn tin real time Fun Chat bằng React và Firebase
+
+github: https://github.com/Nguyen-Ngoc-Minh-Tue/fun-chat
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
