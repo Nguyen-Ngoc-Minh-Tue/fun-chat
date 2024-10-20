@@ -38,7 +38,7 @@ export default function Login() {
       <Row justify="center" style={{ height: 800 }}>
         <Col span={8}>
           <Title level={3} style={{ textAlign: "center" }}>
-            Joy Chat
+            Fun Chat
           </Title>
           <Button
             icon={<GoogleOutlined />}
