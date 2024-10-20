@@ -55,10 +55,8 @@ function DebounceSelect({
             </Avatar>
             {` ${opt.label}`}
           </div>
-          // </Select.Option>
         ),
       }))}
-      // labelInValue
       filterOption={false}
       onSearch={debounceFetcher}
       notFoundContent={fetching ? <Spin size="small" /> : null}
@@ -129,8 +127,8 @@ export default function InviteMemberModal() {
   return (
     <div>
       <Modal
-        title="Mời thêm thành viên"
-        visible={isInviteMemberVisible}
+        title="Invite Member"
+        open={isInviteMemberVisible}
         onOk={handleOk}
         onCancel={handleCancel}
         destroyOnClose={true}
@@ -138,9 +136,9 @@ export default function InviteMemberModal() {
         <Form form={form} layout="vertical">
           <DebounceSelect
             name="search-user"
-            label="Tên các thành viên"
+            label="Member's name"
             value={value}
-            placeholder="Nhập tên thành viên"
+            placeholder="Type name member"
             fetchOptions={fetchUserList}
             onChange={(newValue) => setValue(newValue)}
             style={{ width: "100%" }}
