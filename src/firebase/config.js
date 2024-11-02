@@ -4,13 +4,13 @@ import { connectAuthEmulator, getAuth } from "firebase/auth";
 import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCVDvfnCk7Mq3ZV6B5NYJVBwCvbtOBx-RE",
-  authDomain: "chat-app-b00f0.firebaseapp.com",
-  projectId: "chat-app-b00f0",
-  storageBucket: "chat-app-b00f0.appspot.com",
-  messagingSenderId: "442640220530",
-  appId: "1:442640220530:web:e1a5e15c21ac5c3ff41deb",
-  measurementId: "G-HEJJ31DJPC",
+  apiKey: "AIzaSyBvh5cCQ8a6jMRX1LamglPTyGlSICYQMr0",
+  authDomain: "fun-chat-835e0.firebaseapp.com",
+  projectId: "fun-chat-835e0",
+  storageBucket: "fun-chat-835e0.firebasestorage.app",
+  messagingSenderId: "885834601214",
+  appId: "1:885834601214:web:5a4a5a7ca2c35fc3b0cbaf",
+  measurementId: "G-1GV45222HC",
 };
 
 // Initialize Firebase
