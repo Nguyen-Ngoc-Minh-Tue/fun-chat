@@ -37,7 +37,7 @@ export default function UserInfo() {
         }}
         icon={<LogoutOutlined />}
       >
-        Logout
+        Đăng xuất
       </Button>
     </WrapperStyled>
   );
