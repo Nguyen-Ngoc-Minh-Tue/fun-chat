@@ -45,14 +45,14 @@ export default function Login() {
             style={{ width: "100%", marginBottom: "5px" }}
             onClick={() => handleLogin(googleProvider)}
           >
-            Đăng nhập bằng Google
+            Login by Google
           </Button>
           <Button
             icon={<FacebookOutlined />}
             style={{ width: "100%" }}
             onClick={() => handleLogin(fbProvider)}
           >
-            Đăng nhập bằng Facebook
+            Login by Facebook
           </Button>
         </Col>
       </Row>

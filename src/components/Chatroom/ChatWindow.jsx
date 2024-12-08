@@ -1,7 +1,8 @@
 import {
+  FileAddOutlined,
   SendOutlined,
-  UploadOutlined,
   UserAddOutlined,
+  VideoCameraOutlined,
 } from "@ant-design/icons";
 import React, { useContext, useRef, useState, useEffect } from "react";
 import styled from "styled-components";
@@ -164,7 +165,10 @@ export default function ChatWindow() {
                 type="text"
                 onClick={() => setIsInviteMemberVisible(true)}
               >
-                Mời
+                Invite
+              </Button>
+              <Button icon={<VideoCameraOutlined />} type="link">
+                Call
               </Button>
               <Avatar.Group size="small" max={{ count: 2 }}>
                 {members.map((member) => (
@@ -198,7 +202,7 @@ export default function ChatWindow() {
                   ref={inputRef}
                   onChange={handleInputChange}
                   onPressEnter={handleOnSubmit}
-                  placeholder="Nhập tin nhắn..."
+                  placeholder="Type message..."
                   bordered={false}
                   autoComplete="off"
                 />
@@ -212,7 +216,7 @@ export default function ChatWindow() {
               <Button
                 type="link"
                 onClick={handleOnSubmit}
-                icon={<UploadOutlined />}
+                icon={<FileAddOutlined />}
                 title="Upload File"
               >
                 <Input
