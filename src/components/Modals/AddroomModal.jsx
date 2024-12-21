@@ -25,17 +25,17 @@ export default function AddroomModal() {
   return (
     <div>
       <Modal
-        title="Add Group"
+        title="Thêm thành viên"
         open={isAddRoomVisible}
         onOk={handleOk}
         onCancel={handleCancel}
       >
         <Form form={form} layout="vertical">
-          <Form.Item label="Name Group" name="name">
-            <Input placeholder="Type name group" />
+          <Form.Item label="Tên thành viên" name="name">
+            <Input placeholder="Nhập tên thành viên" />
           </Form.Item>
-          <Form.Item label="Description" name="description">
-            <Input.TextArea placeholder="Type Description" />
+          <Form.Item label="Mô tả" name="description">
+            <Input.TextArea placeholder="Nhập mô tả" />
           </Form.Item>
         </Form>
       </Modal>

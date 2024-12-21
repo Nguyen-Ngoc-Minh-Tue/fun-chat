@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { auth } from "../../firebase/config";
 import { AuthContext } from "../../Context/AuthProvider";
 import {
-  FileTextOutlined,
   LogoutOutlined,
   MessageOutlined,
   UserOutlined,
@@ -47,7 +46,7 @@ export default function UserInfo() {
           }}
           icon={<LogoutOutlined />}
         >
-          Logout
+          Đăng xuất
         </Button>
       </WrapperStyled>
       <Row
@@ -56,24 +55,19 @@ export default function UserInfo() {
           borderBottom: "1px solid rgba(82, 38, 83)",
         }}
       >
-        <Col span={6}>
+        <Col span={7}>
           <Button type="link" icon={<MessageOutlined />}>
-            Chat
+            Tin Nhắn
           </Button>
         </Col>
-        <Col span={6}>
+        <Col span={7}>
           <Button type="link" icon={<VideoCameraOutlined />}>
-            Call
+            Gọi Điện
           </Button>
         </Col>
-        <Col span={6}>
+        <Col span={7}>
           <Button type="link" icon={<UserOutlined />}>
-            Contact
-          </Button>
-        </Col>
-        <Col span={6}>
-          <Button type="link" icon={<FileTextOutlined />}>
-            Social
+            Liên hệ
           </Button>
         </Col>
       </Row>

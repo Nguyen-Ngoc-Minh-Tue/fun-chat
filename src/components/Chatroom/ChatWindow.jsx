@@ -6,7 +6,7 @@ import {
 } from "@ant-design/icons";
 import React, { useContext, useRef, useState, useEffect } from "react";
 import styled from "styled-components";
-import { Button, Tooltip, Avatar, Form, Input, Alert } from "antd";
+import { Button, Tooltip, Avatar, Form, Input } from "antd";
 import InviteMemberModal from "../Modals/InviteMemberModal";
 import Message from "./Message";
 import { AppContext } from "../../Context/AppProvider";
@@ -165,10 +165,10 @@ export default function ChatWindow() {
                 type="text"
                 onClick={() => setIsInviteMemberVisible(true)}
               >
-                Invite
+                Mời
               </Button>
               <Button icon={<VideoCameraOutlined />} type="link">
-                Call
+                Gọi
               </Button>
               <Avatar.Group size="small" max={{ count: 2 }}>
                 {members.map((member) => (
@@ -230,13 +230,7 @@ export default function ChatWindow() {
           </ContentStyled>
         </>
       ) : (
-        <Alert
-          message="Hãy chọn phòng"
-          type="info"
-          showIcon
-          style={{ margin: 5 }}
-          closable
-        />
+        <div></div>
       )}
     </WrapperStyled>
   );
