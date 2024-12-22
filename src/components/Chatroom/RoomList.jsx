@@ -41,7 +41,7 @@ export default function RoomList() {
 
   return (
     <Collapse ghost defaultActiveKey={["1"]}>
-      <PanelStyled header="Thành viên" key="1">
+      <PanelStyled header="Danh sách các phòng" key="1">
         {rooms.map((room) => (
           <LinkStyled key={room.id} onClick={() => setSelectedRoomId(room.id)}>
             {room.name}
@@ -53,7 +53,7 @@ export default function RoomList() {
           className="add-room"
           onClick={handleAddRoom}
         >
-          Thêm thành viên
+          Thêm phòng
         </Button>
       </PanelStyled>
       <AddroomModal />

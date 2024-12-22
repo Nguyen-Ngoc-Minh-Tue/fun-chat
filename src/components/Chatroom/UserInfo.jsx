@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { auth } from "../../firebase/config";
 import { AuthContext } from "../../Context/AuthProvider";
 import {
+  FileOutlined,
   LogoutOutlined,
   MessageOutlined,
   UserOutlined,
@@ -68,6 +69,9 @@ export default function UserInfo() {
         <Col span={7}>
           <Button type="link" icon={<UserOutlined />}>
             Liên hệ
+          </Button>
+          <Button type="link" icon={<FileOutlined />}>
+            Bài viết
           </Button>
         </Col>
       </Row>
