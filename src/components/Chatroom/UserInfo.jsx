@@ -56,21 +56,23 @@ export default function UserInfo() {
           borderBottom: "1px solid rgba(82, 38, 83)",
         }}
       >
-        <Col span={7}>
+        <Col span={6}>
           <Button type="link" icon={<MessageOutlined />}>
             Tin Nhắn
           </Button>
         </Col>
-        <Col span={7}>
+        <Col span={6}>
           <Button type="link" icon={<VideoCameraOutlined />}>
             Gọi Điện
           </Button>
         </Col>
-        <Col span={7}>
+        <Col span={6}>
           <Button type="link" icon={<UserOutlined />}>
             Liên hệ
           </Button>
-          <Button type="link" icon={<FileOutlined />}>
+        </Col>
+        <Col span={6}>
+         <Button type="link" icon={<FileOutlined />}>
             Bài viết
           </Button>
         </Col>
